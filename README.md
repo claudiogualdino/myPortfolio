@@ -18,8 +18,17 @@ Funciona offline depois da primeira abertura (service worker).
 - Arranca com as 17 posições do Excel `Patrimonio mobiliário_12082026_beta_test.xlsx`.
 - **Ajustes → Importar Excel** substitui tudo pelo ficheiro (colunas A–F: Tipologia, Broker, Valor, Owner, NIF, Observ).
 - **Ajustes → Exportar cópia (CSV)** guarda posições + histórico.
-- Cada edição grava automaticamente o total do dia no histórico (um registo por dia).
+- Cada edição grava automaticamente o total do dia no histórico (um registo por dia), incluindo o valor por tipologia.
+
+## Evolução (v2)
+
+- Gráfico de área interativo: toca num ponto para ver o valor e a variação desse registo.
+- Períodos 1M / 6M / 1A / Máx.
+- Média por mês, melhor mês e crescimento anual (CAGR, a partir de ~45 dias de histórico).
+- Objetivo de património: define o valor no ecrã Evolução — barra de progresso, quanto falta e estimativa ao ritmo atual.
+- Variação mês a mês em barras (usa variação por registo enquanto houver menos de 3 meses).
+- Evolução por tipologia desde o registo mais antigo do período (só para registos criados a partir da v2).
 
 ## Atualizar a app
 
-Substitui o `index.html` e incrementa `CACHE` em `sw.js` (ex. `acervo-v2`) para forçar a atualização.
+Substitui o `index.html` e incrementa `CACHE` em `sw.js` (esta versão já está em `acervo-v2`) para forçar a atualização. Sobe também o `manifest.webmanifest` — sem ele o Chrome não oferece "Adicionar ao ecrã principal".
