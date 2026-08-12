@@ -1,6 +1,6 @@
 {
-  "name": "Acervo — Património",
-  "short_name": "Acervo",
+  "name": "Portfolio Management",
+  "short_name": "Portfolio",
   "description": "Gestão do património mobiliário, offline e cifrado no dispositivo.",
   "start_url": "./",
   "scope": "./",
